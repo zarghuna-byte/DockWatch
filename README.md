@@ -1,6 +1,6 @@
 # DockWatch Documentation
 
-Welcome to DockWatch, a real-time Docker container monitoring and management dashboard with AI analytics, auto-recovery, cost optimization, and security features.
+Welcome to [DockWatch](https://github.com/zarghuna-byte/DockWatch), a real-time Docker container monitoring and management dashboard with AI analytics, auto-recovery, cost optimization, and security features.
 
 ## Overview
 
@@ -19,16 +19,19 @@ DockWatch provides real-time monitoring, auto-recovery, and management for Docke
 | CSV/JSON Export | Export metrics data |
 
 ## Quick Start
+
 ```bash
 ./start.sh
 ```
 
 ## Access
+
 - **Dashboard**: http://localhost:3001
 - **API**: http://localhost:3001/api
 - **Health**: http://localhost:3001/api/health
 
 ## Default Credentials
+
 - **Username**: `admin`
 - **Password**: `admin123` (development only)
 
@@ -69,27 +72,12 @@ PAGERDUTY_KEY=your-pagerduty-integration-key
 ```
 
 Endpoints:
+
 - `POST /api/webhooks/test` - Send test notification
 - `GET /api/webhooks/status` - Check webhook configuration
 
-## Testing
-
-### Selenium Login Tests
-
-```bash
-# 1. Ensure frontend is running (http://localhost:3000)
-cd selenium-tests
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run tests
-pytest login_tests.py --verbose
-```
-
-See [selenium-tests/README.md](selenium-tests/README.md) for full details (test descriptions, troubleshooting, headless mode).
-
 ## Guides
+
 - [Getting Started](/docs/GETTING-STARTED.md)
 - [API Reference](/docs/API.md)
 - [Deployment](/docs/DEPLOYMENT.md)
